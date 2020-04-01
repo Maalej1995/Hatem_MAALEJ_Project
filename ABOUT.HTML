@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+    <link rel="stylesheet" href="./CSS/BOOTSTRAP.CSS">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" type="text/css" href="./CSS/STYLE.CSS">
+    <link rel="icon" href="./RES/Hatem MAALEJ.png">
+</head>
+
+<body>
+    <div class="videoContainer">
+        <video autoplay loop muted id="bodyVideo">
+            <source src="./RES/night.mp4" type="video/mp4">
+        </video>
+    </div>
+    <nav class="navbar navbar-default custom-nav">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./HOME.HTML"><img id="logo" src="./RES/Hatem MAALEJ.png"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="./ABOUT.HTML">About<span class="sr-only">(current)</span></a></li>
+                    <!-- <li><a href="./ABOUT.HTML">About</a></li> -->
+                    <li><a href="./EXPERIENCE.HTML">Experience</a></li>
+                    <li><a href="./SKILLS.HTML">Skills</a></li>
+                    <li><a href="./CONTACT.HTML">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="social-media-div">
+        <a href="https://www.facebook.com/maalej95/" target="_blank"><img class="social-media-logo" id="facebook"
+                src="./RES/facebook.png"></a>
+        <a href="https://www.instagram.com/maalej_hatem/" target="_blank"><img class="social-media-logo" id="instagram"
+                src="./RES/instagram.png"></a>
+        <a href="https://www.linkedin.com/in/hatem-maalej-4b081b134/" target="_blank"><img class="social-media-logo"
+                id="linkedin" src="./RES/linkedin.png"></a>
+    </div>
+
+    <button id="toggleBtn1" class="toggleBtn" onClick="toggleDiv(1)"><span>Identity</span></button>
+    <button id="toggleBtn2" class="toggleBtn" onClick="toggleDiv(2)"><span>Education</span></button>
+    <button id="toggleBtn3" class="toggleBtn" onClick="toggleDiv(3)"><span>Hobbies</span></button>
+
+    <div id="right-content" style="background: transparent;">
+        <div class="slide1" id="div0">
+        </div>
+        <div class="slide1" id="div1">
+            <button id="addressBtn" class="identityBtn" onClick="toggleSpan(1)"></button>
+            <button id="birthdayBtn" class="identityBtn" onClick="toggleSpan(2)"></button>
+            <button id="numberBtn" class="identityBtn" onClick="toggleSpan(3)"></button>
+            <button id="mailBtn" class="identityBtn" onClick="toggleSpan(4)"></button>
+            <span id="span1" class="identitySpan">Street Mohamed Jammouci <br> Sfax 3000, TUNISIA</span>
+            <span id="span2" class="identitySpan">14 January 1995</span>
+            <span id="span3" class="identitySpan">+216 26 140 195 <br> +216 52 100 115</span>
+            <span id="span4" class="identitySpan">Maalejh95@gmail.com</span>
+        </div>
+        <div class="slide1" id="div2">
+            <div id="carousel-1" class="carousel slide" data-ride="carousel" style="width: 100%;height: 100%;">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-1" data-slide-to="1"></li>
+                    <li data-target="#carousel-1" data-slide-to="2"></li>
+                    <li data-target="#carousel-1" data-slide-to="3"></li>
+                    <li data-target="#carousel-1" data-slide-to="4"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox" style="width: 100%;height: 100%;border-radius: 100px;">
+                    <div class="item active" style="width: 100%;height: 100%;">
+                        <img src="./RES/eniga.png" alt="National Engineering School of GAFSA"
+                            style="width: 100%;height: 100%;">
+                        <div class="carousel-caption">
+                            <h3>National Engineering School of GAFSA</h3>
+                        </div>
+                    </div>
+                    <div class="item" style="width: 100%;height: 100%;">
+                        <img src="./RES/fss.png" alt="Preparatory to Engineering Schools in Faculty of Science SFAX"
+                            style="width: 100%;height: 100%;">
+                        <div class="carousel-caption">
+                            <h3>Preparatory to Engineering Schools in Faculty of Science SFAX</h3>
+                        </div>
+                    </div>
+                    <div class="item" style="width: 100%;height: 100%;">
+                        <img src="./RES/maazoun.png" alt="Secondary School Habib Maazoun"
+                            style="width: 100%;height: 100%;">
+                        <div class="carousel-caption">
+                            <h3>Secondary School Habib Maazoun</h3>
+                        </div>
+                    </div>
+                    <div class="item" style="width: 100%;height: 100%;">
+                        <img src="./RES/bourguiba.png" alt="College Habib Bourguiba" style="width: 100%;height: 100%;">
+                        <div class="carousel-caption">
+                            <h3>College Habib Bourguiba</h3>
+                        </div>
+                    </div>
+                    <div class="item" style="width: 100%;height: 100%;">
+                        <img src="./RES/bali.png" alt="Primary School Mohamed Bali" style="width: 100%;height: 100%;">
+                        <div class="carousel-caption">
+                            <h3>Primary School Mohamed Bali</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-1" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-1" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="slide1" id="div3">
+            <div id="carousel-2" class="carousel slide" data-ride="carousel" style="width: 100%;height: 100%;">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-2" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-2" data-slide-to="1"></li>
+                    <li data-target="#carousel-2" data-slide-to="2"></li>
+                    <li data-target="#carousel-2" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox" style="width: 100%;height: 100%;border-radius: 100px;">
+                    <div class="item active" style="width: 100%;height: 100%;">
+                        <img src="./RES/dev.png" alt="Programming and Development" style="width: 100%;height: 100%;">
+                        <div class="carousel-caption">
+                            <h3>Programming and Development</h3>
+                        </div>
+                    </div>
+                    <div class="item" style="width: 100%;height: 100%;">
+                        <img src="./RES/volleyball.png" alt="Volleyball" style="width: 100%;height: 100%;">
+                        <div class="carousel-caption">
+                            <h3>Volleyball</h3>
+                        </div>
+                    </div>
+                    <div class="item" style="width: 100%;height: 100%;">
+                        <img src="./RES/onlinelearning.png" alt="Online Self Learning"
+                            style="width: 100%;height: 100%;">
+                        <div class="carousel-caption">
+                            <h3>Online Self Learning</h3>
+                        </div>
+                    </div>
+                    <div class="item" style="width: 100%;height: 100%;">
+                        <img src="./RES/swimming.png" alt="Swimming" style="width: 100%;height: 100%;">
+                        <div class="carousel-caption">
+                            <h3>Swimming</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-2" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-2" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-analytics.js"></script>
+    <script src="./JS/SCRIPT.JS"></script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Experience</title>
+    <link rel="stylesheet" href="./CSS/BOOTSTRAP.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" type="text/css" href="./CSS/STYLE.CSS">
+    <link rel="icon" href="./res/Hatem MAALEJ.png">
+</head>
+
+<body>
+    <div class="videoContainer">
+        <video autoplay loop muted id="bodyVideo">
+            <source src="./RES/night.mp4" type="video/mp4">
+        </video>
+    </div>
+    <nav class="navbar navbar-default custom-nav">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./HOME.HTML"><img id="logo" src="./RES/Hatem MAALEJ.png"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="./ABOUT.HTML">About</a></li>
+                    <li class="active"><a href="./EXPERIENCE.HTML">Experience<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li><a href="./SKILLS.HTML">Skills</a></li>
+                    <li><a href="./CONTACT.HTML">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="social-media-div">
+        <a href="https://www.facebook.com/maalej95/" target="_blank"><img class="social-media-logo" id="facebook"
+                src="./RES/facebook.png"></a>
+        <a href="https://www.instagram.com/maalej_hatem/" target="_blank"><img class="social-media-logo" id="instagram"
+                src="./RES/instagram.png"></a>
+        <a href="https://www.linkedin.com/in/hatem-maalej-4b081b134/" target="_blank"><img class="social-media-logo"
+                id="linkedin" src="./RES/linkedin.png"></a>
+    </div>
+
+    <div class="experienceDiv">
+        <button id="btnExp1" class="experienceBtn" onClick="toggleExpSpan(1)" title="Sopal"></button>
+        <button id="btnExp2" class="experienceBtn" onClick="toggleExpSpan(2)" title="Sopal"></button>
+        <button id="btnExp3" class="experienceBtn" onClick="toggleExpSpan(3)" title="NovelTi"></button>
+        <button id="btnExp4" class="experienceBtn" onClick="toggleExpSpan(4)" title="Tunisian Company For Electricity and Gas of RADES"></button>
+        <button id="btnExp5" class="experienceBtn" onClick="toggleExpSpan(5)" title="Shell Tunisia Upstream LTD"></button>
+        <button id="btnExp6" class="experienceBtn" onClick="toggleExpSpan(6)" title="Tunisian Company For Electricity and Gas of THYNA"></button>
+    </div>
+    <div class="spanDiv">
+        <span id="spanExp1" class="experienceSpan">
+            <h1>Actually Working for as Energy & Environment Engineer</h1>
+            10.2019 - Today<br>
+            -) Environmental and energy management system implementation and update (ISO 14001 and ISO 50001)<br>
+            -) Development of a wastes management plan<br>
+            -) Process automation using Sharepoint, Sharepoint Designer and Infopath<br>
+            -) Dashboards development, Reporting with Power BI<br>
+            -) Data Analysis Automation Using VBA
+        </span>
+        <span id="spanExp2" class="experienceSpan">
+            <h1>Graduation Project</h1>
+            02.2019 - 08.2019<br>
+            Industrial Waste Water Treatment:<br>
+            -) Study of membrane filtration systems<br>
+            -) Designing a wastewater treatment process including membrane ultrafiltration and membrane nanofiltration
+            systems using SuperPRO Desginer
+        </span>
+        <span id="spanExp3" class="experienceSpan">
+            <h1>Internship</h1>
+            08.2018<br>
+            Development of a solar tracking system (IOT):<br>
+            -) Python code<br>
+            -) Raspberry PI 3 board
+
+        </span>
+        <span id="spanExp4" class="experienceSpan">
+            <h1>Internship</h1>
+            08.2017<br>
+            Study of steam turbines and boilers
+
+        </span>
+        <span id="spanExp5" class="experienceSpan">
+            <h1>Internship</h1>
+            07.2017<br>
+            Study of a gas treatment process, instruments and analysis techniques.
+
+        </span>
+        <span id="spanExp6" class="experienceSpan">
+            <h1>Internship</h1>
+            03.2017<br>
+            Study of gas turbines
+
+        </span>
+    </div>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-analytics.js"></script>
+    <script src="./JS/SCRIPT.JS"></script>
+</body>
+
+</html>
